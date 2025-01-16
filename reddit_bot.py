@@ -25,15 +25,15 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 
 
 # Import Groq client after installing it
-client = Groq(api_key="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")
+client = Groq(api_key="GROQ_API_KEY")
 
 # Setup and authenticate with Reddit API
 reddit = praw.Reddit(
-    client_id='DVQdI91lEDoMf3jFE5BYqA',
-    client_secret='huXq4Oiw24FwiDRNV0o5CumzGHAwoA',
-    password='Vantablack712@',
-    user_agent='script:reddit_bot:v1.0 (by /u/Vanta_black__)',
-    username='Vanta_black__'
+    client_id='REDDIT_CLIENT_ID',
+    client_secret='REDDIT_CLIENT_SECRET',
+    password='REDDIT_PASS',
+    user_agent='script:reddit_bot:v1.0 (by /u/your_username)',
+    username='REDDIT_USER_ID'
 )
 
 def generate_and_post():
